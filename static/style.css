@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe6e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  h1 {
+    color: #ff4d4d;
+    margin-bottom: 2rem;
+  }
+  
+  .botones {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .btn:hover {
+    transform: scale(1.1);
+  }
+  
+  .si {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .no {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .gracias-page {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .gracias-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+    z-index: 1;
+  }
+  
+  .gracias-container h1 {
+    font-size: 1.5rem;
+    color: #ff4d4d;
+    margin-bottom: 1rem;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  #mensaje2,
+  #minion-img {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  #minion-img {
+    max-width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+  }
+  
+  
+  
+  
+  
+  

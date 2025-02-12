@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quieres ser mi San Valentín?</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 id="pregunta">¿Quieres ser mi San Valentín?</h1>
+        <div class="botones">
+            <form action="/" method="post">
+                <button type="submit" name="si" class="btn si">Sí</button>
+            </form>
+            <button id="no" class="btn no">No</button>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+

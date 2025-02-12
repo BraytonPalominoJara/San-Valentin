@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Gracias!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="gracias-page">
+    <div class="container gracias-container">
+        <h1 id="mensaje1">Espero esta sorpresa te guste, miremos mucho mrbeast y riamonos mucho :3</h1>
+        <div id="contenido2" style="display: none;">
+            <h1 id="mensaje2">Unas flores para tu ♥</h1>
+            <img src="{{ url_for('static', filename='minion.png') }}" alt="Minion con rosa" id="minion-img">
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                document.getElementById('mensaje1').style.opacity = '0';
+                setTimeout(function() {
+                    document.getElementById('mensaje1').style.display = 'none';
+                    document.getElementById('contenido2').style.display = 'block';
+                    setTimeout(function() {
+                        document.getElementById('mensaje2').style.opacity = '1';
+                        document.getElementById('minion-img').style.opacity = '1';
+                    }, 100);
+                }, 1000);
+            }, 3000);
+        });
+    </script>
+</body>
+</html>
+
+
